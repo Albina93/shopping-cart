@@ -33,8 +33,8 @@ addProductBtn.addEventListener("click", (e) => {
     return;
   }
   const li = document.createElement("li");
-  li.dataset.price = Number(price);
-  li.textContent = `${name} - ${price}`;
+  li.dataset.price = price;
+  li.textContent = `${name} -  $${price}`;
 
   const removeBtn = document.createElement("button");
   removeBtn.textContent = "Remove";
